@@ -1,0 +1,14 @@
+diff --git a/node_modules/tslib/package.json b/node_modules/tslib/package.json
+index 22ddb83..3e74472 100644
+--- a/node_modules/tslib/package.json
++++ b/node_modules/tslib/package.json
+@@ -22,7 +22,8 @@
+   "exports": {
+     ".": {
+       "module": "./tslib.es6.js",
+-      "import": "./modules/index.js",
++      "import": "./tslib.es6.js",
++      "package.json": "./package.json",
+       "default": "./tslib.js"
+     },
+     "./": "./"
