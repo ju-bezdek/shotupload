@@ -54,6 +54,41 @@ export interface ImageUploaderProps extends UploaderOptions {
   
   // Custom upload handler
   handleUpload?: (file: File, onProgress: (progress: number) => void) => Promise<void>;
+  
+  // New properties
+  value?: { name: string; key?: string; url?: string; };
+  handleRemove?: (file: { name: string; key?: string; url?: string; }) => void;
+  getPublicImageUrl?: (file: { name: string; key?: string; url?: string; }) => Promise<string>;
+}
+
+export interface FileUploaderProps {
+  uploadUrl?: string;
+  maxSize?: number;
+  allowedTypes?: string[];
+  multiple?: boolean;
+  onProgress?: (percentage: number, file: File) => void;
+  onSuccess?: (response: any, file: File) => void;
+  onError?: (error: Error, file: File) => void;
+  className?: string;
+  buttonText?: string;
+  dropzoneText?: string;
+  showPreview?: boolean;
+  styles?: {
+    primaryColor?: string;
+    hoverColor?: string;
+    borderColor?: string;
+    borderColorActive?: string;
+    backgroundColor?: string;
+    textColor?: string;
+  };
+  handleUpload?: (file: File, onProgress: (percentage: number) => void) => Promise<any>;
+  allowRemove?: boolean;
+  height?: number | string;
+  // New props
+  value?: { name: string; key: string; url?: string; } | Array<{ name: string; key: string; url?: string; }>;
+  allowDownload?: boolean;
+  getDownloadableUrl?: (file: { name: string; key: string; url: string; }) => Promise<string>;
+  handleRemove?: (file: any) => void; // Callback when a file is removed
 }
 
 

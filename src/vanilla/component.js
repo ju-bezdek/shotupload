@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ImageUploader } from '../react/component.jsx';
+import { ImageUploader } from '../react/ImageUploader.tsx';
 
 export class VanillaImageUploader {
   constructor(element, options = {}) {
