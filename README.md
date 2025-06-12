@@ -5,7 +5,7 @@ A JavaScript library with embeddable image and file upload components that work 
 ## Installation
 
 ```bash
-npm install shotupload-sdk
+npm install shotupload
 ```
 
 ## React Components
