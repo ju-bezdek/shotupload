@@ -14,7 +14,7 @@ npm install shotupload
 
 ```jsx
 import React from 'react';
-import { ImageUploader } from 'shotupload-sdk/react';
+import { ImageUploader } from 'shotupload;
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
 
 ```jsx
 import React from 'react';
-import { FileUploader } from 'shotupload-sdk/react';
+import { FileUploader } from 'shotupload;
 
 function App() {
   return (
@@ -63,7 +63,7 @@ You can provide your own upload implementation by using the `handleUpload` prop:
 
 ```jsx
 import React, { useState } from 'react';
-import { ImageUploader, FileUploader } from 'shotupload-sdk/react';
+import { ImageUploader, FileUploader } from 'shotupload;
 
 function App() {
   const [uploadedImageUrl, setUploadedImageUrl] = useState(null);
